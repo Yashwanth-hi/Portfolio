@@ -9,8 +9,8 @@
 }
 
 body {
-    background: #0f0f0f;
-    color: #ffffff;
+    background: #7d7a7a;
+    color: #fbf8f8;
 }
 
 html {
@@ -60,7 +60,7 @@ header {
 .hero {
     margin: 40px auto;
     width: 90%;
-    background: #1a1a1a; 
+    background: #474646; 
     padding: 70px;
     border-radius: 35px;
     display: flex;
@@ -124,7 +124,7 @@ header {
     padding: 12px 32px;
     background: #00eaff;
     border-radius: 30px;
-    color: black;
+    color: rgb(65, 64, 64);
     text-decoration: none;
     font-weight: 600;
     font-size: 17px;
@@ -204,17 +204,26 @@ header {
    SKILLS SECTION
 -------------------------- */
 .skills {
-    padding: 90px 80px;
-    background: #111111;
+  margin: 40px auto;
+    width: 90%;
+    background: #474646; 
+    padding: 70px;
+    border-radius: 35px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 40px rgba(0, 255, 255, 0.15);
+
 }
 
 .skill-box {
-    width: 70%;
+    width: 50%;
     margin: auto;
+    align-items: center;
 }
 
 .skill {
     margin-bottom: 25px;
+   
 }
 
 .skill span {
@@ -239,17 +248,17 @@ header {
 
 .project-card {
     width: 320px;
-    background: #1b1b1b;
+    background: #605d5d;
     padding: 20px;
     border-radius: 20px;
     text-align: center;
     transition: 0.3s;
-    box-shadow: 0px 0px 30px rgba(0,255,255,0.1);
+    box-shadow: 0px 0px 30px rgba(210, 212, 212, 0.1);
 }
 
 .project-card:hover {
     transform: translateY(-7px);
-    box-shadow: 0px 0px 40px rgba(0,255,255,0.25);
+    box-shadow: 0px 0px 40px rgba(245, 247, 247, 0.25);
 }
 
 .project-card img {
@@ -265,7 +274,7 @@ header {
 -------------------------- */
 .contact {
     padding: 90px 80px;
-    background: #111;
+    background: #434242;
 }
 
 .contact-form {
@@ -281,7 +290,7 @@ header {
     padding: 15px;
     border-radius: 10px;
     border: none;
-    background: #222;
+    background: #525050;
     color: white;
     font-size: 17px;
 }
@@ -301,7 +310,7 @@ header {
 footer {
     text-align: center;
     padding: 22px;
-    background: #0c0c0c;
+    background: #4e4d4d;
     color: #dddddd;
     font-size: 16px;
 }
@@ -329,47 +338,5 @@ footer {
     .glow-box {
         width: 270px;
         height: 350px;
-    }
-
-   /* ABOUT SECTION LEFT ALIGN */
-.about-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-.section-title-left {
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.about-text {
-    width: 55%;
-    text-align: left;   /* <-- THIS FIXES ALL TEXT ALIGNMENT */
-}
-
-.about-text h3 {
-    font-size: 30px;
-    margin-bottom: 15px;
-}
-
-.about-text p {
-    margin-bottom: 10px;
-    color: #dddddd;
-    line-height: 1.7;
-}
-
-.about-img {
-    width: 280px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 30px rgba(0,255,255,0.15);
-}
-
-
-    .contact-form {
-        width: 90%;
     }
 }
