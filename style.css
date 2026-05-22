@@ -105,10 +105,12 @@ header {
 /* Social Icons */
 .social-icons {
     margin: 20px 0;
+    display: flex;
+    gap:18px;
 }
 
 .social-icons a {
-    margin-right: 18px;
+   
     color: #00eaff;
     font-size: 24px;
     transition: 0.3s ease;
@@ -129,6 +131,7 @@ header {
     font-weight: 600;
     font-size: 17px;
     transition: 0.3s;
+    display:inline-block;
 }
 
 .btn:hover {
@@ -273,8 +276,15 @@ header {
    CONTACT FORM
 -------------------------- */
 .contact {
-    padding: 90px 80px;
-    background: #434242;
+     margin: 40px auto;
+    width: 90%;
+    background: #474646; 
+    padding: 70px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 40px rgba(0, 255, 255, 0.15);
 }
 
 .contact-form {
@@ -319,15 +329,39 @@ footer {
    RESPONSIVE DESIGN
 -------------------------- */
 @media (max-width: 900px) {
+    header{
+        padding:20px;
+    }
+    .navbar{
+        flex-direction: column;
+        gap:20px;
+    }
+    .nav-links{
+        flex-direction: column;
+        gap:15px;
+        text-align: center;
+    }
 
     .hero {
         flex-direction: column;
         text-align: center;
-        padding: 60px 30px;
+        padding: 50px 25px;
     }
 
     .hero-text {
         width: 100%;
+    }
+    .hero-text h1{
+        font-size: 42px;
+    }
+    .hero-text h2{
+        font-size: 22px;
+    }
+    .hero-text p{
+        width: 100%;
+    }
+    .social-icons{
+        justify-content: center;
     }
 
     .hero-image {
@@ -336,7 +370,36 @@ footer {
     }
 
     .glow-box {
-        width: 270px;
-        height: 350px;
+        width: 260px;
+        height: 320px;
     }
+    .about{
+        padding: 60px 25px;
+    }
+    .about-container{
+        flex-direction: column;
+        text-align: center;
+    }
+ .about-text{
+    width: 100%;
+ }   
+ .skill{
+    padding: 50px 25px;
+ }
+ .skill-box{
+    width:100%;
+
+ }
+ .projects{
+    padding: 60px 25px;
+ }
+ .contact{
+    padding: 60px 25px;
+ }
+ .contact-form{
+    width: 100%;
+ }
+ .section-title{
+    font-size: 32px;
+ }
 }
